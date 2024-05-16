@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #ticker {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  #stock-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #stock-list li {
+    padding: 0 20px;
+    border-right: 1px solid #444;
+  }
+  
+  #stock-list li:last-child {
+    border-right: none;
+  }
+  
