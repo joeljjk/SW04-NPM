@@ -1,0 +1,328 @@
+{
+  "id": "d7491b54-63e4-4bd0-a790-f4fc7e7d96f0",
+  "version": "2.0",
+  "name": "DevOpsTesting",
+  "url": "https://moodle.zhaw.ch",
+  "tests": [{
+    "id": "5e497fc3-ba5e-4d9a-b70f-ec6f0c7cd8bc",
+    "name": "1. Läuft die Seite?",
+    "commands": [{
+      "id": "3205bd9e-82fd-4d95-bd41-a315f118e73b",
+      "comment": "",
+      "command": "open",
+      "target": "/my/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "691439b4-530d-47df-a444-3c28bf3993e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1585x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16dd47a0-47ef-49f1-a20c-e94ce304cfa2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Meine Kurse",
+      "targets": [
+        ["linkText=Meine Kurse", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Meine Kurse')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-66474f3b88c94-navbar-nav']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://moodle.zhaw.ch/my/courses.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Meine Kurse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a16a190e-626e-4f27-8629-70644e5ac80d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-15518-2 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-15518-2 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-15518-2']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3021c44c-0ee8-497a-9ee8-1f25b2f3a3b4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8871721a-cb6b-4b6d-851a-f6ee1d1f5ff9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e4a5c330-2d8b-4789-969c-4d825c5fc484",
+    "name": "2. Bin ich eingeloggt?",
+    "commands": [{
+      "id": "29f0f669-0cb7-42ef-8d86-08db895e851f",
+      "comment": "",
+      "command": "open",
+      "target": "/my/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbe76765-a446-476a-a249-6515a245a6fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1585x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb8dfcb4-fac6-459b-8d27-39fcea75fb3b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=JK", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb1fdd9-9449-41f4-bbfa-3ee701d851b8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=JK", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55f8665f-dda8-4b79-ba95-f863362e979a",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=JK", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9c7d26a-e76b-4651-b973-c9990cfd1ba4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=JK", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715949948908_81']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3303809-6fa8-43ea-aeee-e404a4ef1633",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profil",
+      "targets": [
+        ["linkText=Profil", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Profil')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://moodle.zhaw.ch/user/profile.php')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "043ab971-d689-4c4f-8c34-28224f15f0b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h2",
+      "targets": [
+        ["css=.h2", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div[2]/div/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Joel Kurmann (W LE-W-MA-WIN-01-22HS-A)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a12b45e-eef4-477a-8caf-8978d193b0a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=yui_3_18_1_1_1715949951892_30",
+      "targets": [
+        ["id=yui_3_18_1_1_1715949951892_30", "id"],
+        ["css=#yui_3_18_1_1_1715949951892_30", "css:finder"],
+        ["xpath=//h1[@id='yui_3_18_1_1_1715949951892_30']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715949951892_31']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Joel Kurmann (W LE-W-MA-WIN-01-22HS-A)')]", "xpath:innerText"]
+      ],
+      "value": "Joel Kurmann (W LE-W-MA-WIN-01-22HS-A)"
+    }]
+  }, {
+    "id": "3ce2d568-0da8-4732-819c-b8e7bffc97cf",
+    "name": "3. War DevOps mein zuletzt gewälter?",
+    "commands": [{
+      "id": "ca8aa2c8-7141-4f43-b72f-ae1a85a6c531",
+      "comment": "",
+      "command": "open",
+      "target": "/my/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3a428af-5df7-4305-98ef-1119b3e04ebf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1585x1003",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cc8d8f3-5af0-4e59-b6b8-a0483389134a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Sucheingabe umschalten",
+      "targets": [
+        ["linkText=Sucheingabe umschalten", "linkText"],
+        ["css=.btn-open", "css:finder"],
+        ["xpath=//div[@id='searchinput-navbar-664751e3e4e73664751e39f71c8']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#searchform-navbar')])[2]", "xpath:href"],
+        ["xpath=//nav/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sucheingabe umschalten')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d32edfcb-2544-4600-9145-b7cfcf80c1bf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=.nav-item:nth-child(2) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-664751e3ad9ac-navbar-nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://moodle.zhaw.ch/my/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b92393c-a941-4500-a2cc-8cea8cf64567",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=.nav-item:nth-child(2) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-664751e3ad9ac-navbar-nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://moodle.zhaw.ch/my/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34799fa1-809f-44e9-a65f-3e4e2b259bb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-15518-3 .aalink > .text-truncate",
+      "targets": [
+        ["css=#course-info-container-15518-3 .aalink > .text-truncate", "css:finder"],
+        ["xpath=//div[@id='course-info-container-15518-3']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//a/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f31183b7-0090-400a-9a84-164a9c1f3b0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=page-header",
+      "targets": [
+        ["id=page-header", "id"],
+        ["css=#page-header", "css:finder"],
+        ["xpath=//header[@id='page-header']", "xpath:attributes"],
+        ["xpath=//div[@id='topofscroll']/header", "xpath:idRelative"],
+        ["xpath=//header", "xpath:position"],
+        ["xpath=//header[contains(.,'DevOps (2024-FS)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "099fd3dd-59ea-4d82-bdcf-4be7f4f351d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.h2",
+      "targets": [
+        ["css=.h2", "css:finder"],
+        ["xpath=//header[@id='page-header']/div/div[2]/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'DevOps (2024-FS)')]", "xpath:innerText"]
+      ],
+      "value": "DevOps (2024-FS)"
+    }, {
+      "id": "6ce4e2a6-b136-4f1e-b456-9aa3f42711c9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.drawer-right-toggle > .btn",
+      "targets": [
+        ["css=.drawer-right-toggle > .btn", "css:finder"],
+        ["xpath=//div[@id='topofscroll']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Blockleiste öffnen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f23a51e5-1d54-4b98-b1b9-5f0fc67a1636",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.drawer-right-toggle > .btn",
+      "targets": [
+        ["css=.drawer-right-toggle > .btn", "css:finder"],
+        ["xpath=//div[@id='topofscroll']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Blockleiste öffnen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f500e4da-19b1-4156-89cf-c2d1a3b61437",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7002a848-49ed-44b4-8929-cfa215dcfc2e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://moodle.zhaw.ch/"],
+  "plugins": []
+}
