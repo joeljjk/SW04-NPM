@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-const stocks = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA']; // List of stock symbols
+const stocks = ['AAPL', 'MSFT', 'GOOGL']; // List of stock symbols
 const API_KEY = 'O83FJ7SV2CUIW1R2';
 
 // Utility function to add delay
